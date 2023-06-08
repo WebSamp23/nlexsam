@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NLEX</title>
+	<link rel="stylesheet" type="text/css" href="form-style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="virtual-select.min.css" />
+	<script src="virtual-select.min.js"></script>
+	<script src="https://kit.fontawesome.com/88c6d5ddbe.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="fancyselect.min.css"/>
+</head>
+<body id="banner">
+	<div class="container">
+		<div class="backBtn">
+			<a href="index.html" class="fa fa-angle-left">Back</a>
+		</div>
+		<div class="title">Booking Form</div>
+		<form action="#" id="form">
+			<div class="user-details">
+				<div class="input-box">
+					<span class="details">Name</span>
+					<input id="name" type="text" placeholder="" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Email</span>
+					<input id="email" type="email" placeholder="" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Phone Number</span>
+					<input id="pnumber" type="text" placeholder="" onkeypress="isInputNumber(event)" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Date</span>
+					<input type="date" id="date-input" required>
+				</div>
+				<div class="input-box">
+					<span class="details">Time</span>
+					<select id="custom">
+  						<option>9:00 am</option>
+  						<option>9:30 am</option>
+  						<option>10:00 am</option>
+  						<option>10:30 am</option>
+  						<option>11:00 am</option>
+  						<option>11:30 am</option>
+  						<option>12:00 pm</option>
+  						<option>12:30 pm</option>
+  						<option>1:00 pm</option>
+  						<option>1:30 pm</option>
+  						<option>2:00 pm</option>
+  						<option>2:30 pm</option>
+  						<option>3:00 pm</option>
+  						<option>3:30 pm</option>
+  						<option>4:00 pm</option>
+  						<option>4:30 pm</option>
+  						<option>5:00 pm</option>
+  						<option>5:30 pm</option>
+					</select>
+				</div>
+				<div class="input-box">
+					<span class="details">Pax</span>
+					<select id="custom">
+  						<option>1 Pax</option>
+  						<option>2 Pax</option>
+  						<option>3 Pax</option>
+  						<option>4 Pax</option>
+  						<option>5 Pax</option>
+					</select>
+				</div>
+				<div class="input-box1">
+					<span class="details1">Staff</span>
+					<select id="custom">
+  						<option>Allaina</option>
+  						<option>Krizha</option>
+  						<option>Loida</option>
+  						<option>Joana</option>
+  						<option>Lyra</option>
+  						<option>Aldwyn</option>
+  						<option>Randell</option>
+					</select>
+				</div>
+				<div class="container-box">
+					<span class="details-box">Treatments</span>
+					<div class="list">
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="manicure" id="manicure">
+							<label for="manicure">
+								<div class="treat-title">
+									Manicure<br>(Ordinary Polish)<br>40 minutes
+									<p class="treat-desc">P120.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="pedicure" id="pedicure">
+							<label for="pedicure">
+								<div class="treat-title">
+									Pedicure<br>(Ordinary Polish)<br>40 minutes
+									<p class="treat-desc">P140.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="gel-polish" id="gel-polish">
+							<label for="gel-polish">
+								<div class="treat-title">
+									Gel Polish<br>50 minutes
+									<p class="treat-desc">P350.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="gel-removal" id="gel-removal">
+							<label for="gel-removal">
+								<div class="treat-title">
+									Gel Removal(with repair Mani/Pedi)<br>1hr - 1hr & 30mins
+									<p class="treat-desc">P90.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="polygel" id="polygel">
+							<label for="polygel">
+								<div class="treat-title">
+									Polygel Nail<br>2hrs - 3hrs
+									<p class="treat-desc">P1,599.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="acrylic-nail" id="acrylic-nail">
+							<label for="acrylic-nail">
+								<div class="treat-title">
+									Acrylic Powder Nail<br>2hrs - 3hrs
+									<p class="treat-desc">P1,549.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="acrylic-false" id="acrylic-false">
+							<label for="acrylic-false">
+								<div class="treat-title">
+									Acrylic False<br>2hrs - 3hrs
+									<p class="treat-desc">P1,300.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-element">
+							<input type="checkbox" name="platform" value="ext-removal" id="ext-removal">
+							<label for="ext-removal">
+								<div class="treat-title">
+									Extension Removal(with Mani/Pedi)<br>1hr - 2hrs
+									<p class="treat-desc">P100.00</p>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="container-boxAdd">
+					<span class="details-boxAdd">Add-Ons</span>
+					<div class="list">
+						<div class="form-elementAdd">
+							<input type="checkbox" name="platform" value="add-sticker" id="add-sticker">
+							<label for="add-sticker">
+								<div class="treat-title">
+									Nail Sticker
+									<p class="treat-desc">P30.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-elementAdd">
+							<input type="checkbox" name="platform" value="add-gem" id="add-gem">
+							<label for="add-gem">
+								<div class="treat-title">
+									Gem/Stones
+									<p class="treat-desc">P70.00</p>
+								</div>
+							</label>
+						</div>
+						<div class="form-elementAdd">
+							<input type="checkbox" name="platform" value="add-chrome" id="add-chrome">
+							<label for="add-chrome">
+								<div class="treat-title">
+									Chrome/<br>Stamp
+									<p class="treat-desc">P50.00</p>
+								</div>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			
+			<div class="bookBtn">
+				<input type="submit" value="Book" id="open-popupBtn" onclick="openPopup()">
+			</div>
+		</form>
+		<div class="popup-alert" id="popup-alert">
+			<img src="./images/tick.png">
+			<h2>Thank You!</h2>
+			<p>Your booking has been submitted!</p>
+			<button type="button" onclick="closePopup()">Okay</button>
+		</div>
+	</div>
+
+
+<script type="text/javascript">
+	var date = new Date();
+	var tdate = date.getDate();
+	var month = date.getMonth() + 1;
+
+	if (tdate < 10) {
+		tdate = '0' + tdate;
+	}
+	if (month < 10) {
+		month = '0' + month;
+	}
+	var year = date.getUTCFullYear();
+	var minDate = year + '-' + month + '-' + tdate;
+	document.getElementById('date-input').setAttribute('min', minDate);
+	console.log(minDate);
+</script>
+
+
+<script type="text/javascript">
+	VirtualSelect.init({ 
+  		ele: '#multi-select' 
+	});
+</script>
+
+<script type="text/javascript">
+	function isInputNumber(evt){
+		var ch = String.fromCharCode(evt.which);
+
+		if (!(/[0-9]/.test(ch))) {
+			evt.preventDefault();
+		}
+	}
+</script>
+
+<script type="text/javascript">
+	const picker = document.getElementById('date-input');
+		picker.addEventListener('input', function(e){
+  	var day = new Date(this.value).getUTCDay();
+  	
+  	if([0].includes(day)){
+    	e.preventDefault();
+    	this.value = '';
+    	alert('Sunday not available.');
+  }
+});
+</script>
+
+<script src="sweetalert.min.js"></script>
+<script type="text/javascript" src="fancyselect.min.js"></script>
+
+<script type="text/javascript">
+	let popup = document.getElementById('popup-alert');
+
+	function openPopup(){
+		const form = document.getElementById('form');
+		const name = document.getElementById('name');
+		const email = document.getElementById('email');
+		const pnumber = document.getElementById('pnumber');
+		const bookdate = document.getElementById('date-input');
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+
+			validateInputs();
+		});
+
+		const validateInputs = () => {
+		const nameValue = name.value;
+		const emailValue = email.value;
+		const pnumberValue = pnumber.value;
+		const bookdateValue = bookdate.value;
+
+			if (nameValue !== '' && emailValue !== '' && pnumberValue !== '' && bookdateValue !== '') {
+			/*swal("Good job!", "You clicked the button!", "success");
+			window.location = "index.html";*/
+				popup.classList.add('open-popup');
+			} else {
+				swal("Please Fill up the form!");
+			}
+		};
+		
+	}
+	function closePopup(){
+		popup.classList.remove('open-popup');
+		location.href='index.html';
+	}
+</script>
+
+</body>
+</html>
